@@ -12,16 +12,19 @@ const publicConfig		= {
 	devtool: 'cheap-module-source-map',
 	module: {
 		rules: [{
-			test: /\.css$/,
+			test: /\.sass|\.scss$/,
 			use: ExtractTextPlugin.extract({
-			  fallback: "style-loader",
-			  use: "css-loader"
-			})
+					fallback: "style-loader",
+					use: ["css-loader", "sass-loader"]
+				})
 		}]
 	},
 	plugins: [
 		new CleanWebpackPlugin(['dist/*.*']),
 		new UglifyJSPlugin(),
+		new webpack.LoaderOptionsPlugin({
+			minimize: true
+		}),
 		new webpack.DefinePlugin({
           'process.env': {
               'NODE_ENV': JSON.stringify('production')

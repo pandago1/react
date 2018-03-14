@@ -1,3 +1,6 @@
+import './css/base.scss';
+import './css/page.sass';
+import './css/footer.sass';
 import React from 'react';
 import ReactDom from 'react-dom';
 import {AppContainer} from 'react-hot-loader';

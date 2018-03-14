@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {increment, decrement, reset} from '../../redux/actions/counter';
-
 import {connect} from 'react-redux';
+import {mapDispatchToProps} from 'components/common/common';
 
 class Counter extends Component {
     render() {
@@ -25,18 +24,18 @@ const mapStateToProps = (state) => {
     }
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        increment: () => {
-            dispatch(increment())
-        },
-        decrement: () => {
-            dispatch(decrement())
-        },
-        reset: () => {
-            dispatch(reset())
-        }
-    }
-};
+//const mapDispatchToProps = (dispatch) => {
+//    return {
+//        increment: () => {
+//            dispatch(increment())
+//        },
+//        decrement: () => {
+//            dispatch(decrement())
+//        },
+//        reset: () => {
+//            dispatch(reset())
+//        }
+//    }
+//};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);

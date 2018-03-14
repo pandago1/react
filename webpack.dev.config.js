@@ -17,8 +17,8 @@ const devConfig	= {
 	},
 	module: {
 		rules: [{
-		   test: /\.css$/,
-		   use: ['style-loader', 'css-loader'],
+			test: /\.sass|\.scss$/,
+			use: ['style-loader', 'css-loader', 'sass-loader'],
 			include: path.join(__dirname, 'src')
 		}]
 	},
@@ -26,7 +26,10 @@ const devConfig	= {
 		port: 8080,
         contentBase: path.join(__dirname, './dist'),
 		historyApiFallback: true,
-		host: '0.0.0.0'
+		host: '0.0.0.0',
+		allowedHosts: [
+			'.com'
+		]
     }
 }
 
