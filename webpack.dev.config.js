@@ -23,7 +23,8 @@ const devConfig	= {
 		}]
 	},
     devServer: {
-		port: 8080,
+		port: 80,
+		inline: true,
         contentBase: path.join(__dirname, './dist'),
 		historyApiFallback: true,
 		host: '0.0.0.0',

@@ -1,11 +1,13 @@
 import {combineReducers} from "redux";
 
-import counter from './reducers/counter';
-import userInfo from './reducers/userInfo';
+import counter from 'reducers/counter';
+import userInfo from 'reducers/userInfo';
+import nav from 'reducers/nav';
 
 export default combineReducers({
     counter,
-    userInfo
+    userInfo,
+	nav
 });
 
 //export default function combineReducers(state = {}, action) {

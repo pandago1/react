@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './home.sass';
+import {connect} from 'react-redux';
+import { path } from 'actions/nav';
 
-export default class Home extends Component {
+class Home extends Component {
     constructor(props, l) {
         super(props);
         this.state = {
@@ -38,6 +40,22 @@ export default class Home extends Component {
         )
     }
 	jump() {
+		this.props.path()
 		console.log(this);
 	}
 }
+
+const mapStateToProps	= (state) => {
+	return {
+		nav: state.nav
+	}
+};
+
+const mapDispatchToProps	= (dispatch) => {
+	return {
+		path: () => {
+			dispatch(path());
+		}
+	}
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
