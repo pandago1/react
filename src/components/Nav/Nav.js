@@ -12,6 +12,7 @@ class Nav extends Component {
 	}
     render() {
         return (
+<<<<<<< HEAD
 			<footer id="foot" >
 				<ul>
 					{this.arr.map((pathName, index) => {
@@ -33,6 +34,14 @@ class Nav extends Component {
 					})}
 				</ul>
 			</footer>
+=======
+            <ul>
+                <li><Link to="/">首页</Link></li>
+                <li><Link to="/page1">Page1</Link></li>
+                <li><Link to="/counter">Counter</Link></li>
+                <li><Link to="/userinfo">UserInfo</Link></li>
+            </ul>
+>>>>>>> 55651ac24f14c62d74a48f71ce0a3d43416ddec0
         )
     }
 	slideLi(e, name) {
