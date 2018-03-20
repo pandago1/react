@@ -5,7 +5,6 @@ import image from './images/n.png';
 import { List, Switch, Calendar } from 'antd-mobile';
 import zhCN from 'antd-mobile/lib/calendar/locale/zh_CN';
 import enUS from 'antd-mobile/lib/calendar/locale/en_US';
-import 'antd-mobile/dist/antd-mobile.css';
 
 const extra = {
   '2017/07/15': { info: 'Disable', disable: true },

@@ -22,7 +22,7 @@ const createComponent = (component) => (props) => (
 );
 
 export default () => (
-	<div>
+	<div id="content">
 		<Switch>
 			<Route exact path="/" component={createComponent(Home, 1)}/>
 			<Route path="/page1" component={createComponent(Page1)}/>

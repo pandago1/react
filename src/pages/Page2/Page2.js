@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {increment, decement, reset} from 'actions/counter';
 
 import { Button } from 'antd-mobile';
-import 'antd-mobile/dist/antd-mobile.css'
 
 const	style	= {
 	width: '1rem'

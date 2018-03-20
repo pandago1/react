@@ -1,6 +1,9 @@
-import './css/base.scss';
+import 'antd-mobile/dist/antd-mobile.css';
+import './css/common.sass';
 import './css/page.sass';
 import './css/footer.sass';
+import './css/base.scss';
+
 import React from 'react';
 import ReactDom from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
