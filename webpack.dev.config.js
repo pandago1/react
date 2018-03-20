@@ -20,10 +20,13 @@ const devConfig	= {
 			test: /\.sass|\.scss$/,
 			use: ['style-loader', 'css-loader', 'sass-loader'],
 			include: path.join(__dirname, 'src')
+		}, {
+			test: /\.css$/,
+			use: ['style-loader', 'css-loader']
 		}]
 	},
     devServer: {
-		port: 80,
+		port: 8001,
 		inline: true,
         contentBase: path.join(__dirname, './dist'),
 		historyApiFallback: true,

@@ -29,7 +29,7 @@ export default () => (
 			<Route path="/page2" component={createComponent(Page2)}/>
 			<Route path="/counter" component={createComponent(Counter)}/>
 			<Route path="/userinfo" component={createComponent(UserInfo)}/>
-			<Route path="/Test" component={createComponent(Test)}/>
+			<Route path="/test" component={createComponent(Test)}/>
             <Route component={createComponent(NotFound)}/>
 		</Switch>
 	</div>

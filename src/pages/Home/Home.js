@@ -21,6 +21,7 @@ class Home extends Component {
     }
 
     _handleClick() {
+		console.log(this.state)
         this.setState({
             count: ++this.state.count
         });
@@ -35,7 +36,7 @@ class Home extends Component {
                 this is home~11<br/>
                 当前计数：{this.state.count}<br/>
                 <button onClick={() => this._handleClick()}>自增</button>
-				<div className="jump" onClick={ this.jump.bind(this) }><Link to="/page1">点一下</Link></div>
+				<div className="jump" onClick={ this.jump.bind(this) }><Link to="page1">点一下</Link></div>
             </div>
         )
     }
