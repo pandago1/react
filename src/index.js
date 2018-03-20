@@ -6,7 +6,8 @@ import ReactDom from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
 import {Provider} from 'react-redux';
 import store from './redux/store';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
+// BrowserRouter TODO 以上上node的时候启用
 import App from 'components/App/App';
 
 //import getRouter from 'router/router';

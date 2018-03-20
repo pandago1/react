@@ -22,7 +22,8 @@ class Nav extends Component {
 								
 								/*onClick={ this.slideLi.bind(this, pathName)}*/
 								onClick={ (e) => {
-										this.props.path()
+										this.props.path();
+										console.log(this.props.nav);
 										//this.slideLi( e, 'name' + pathName)
 									}
 								}
