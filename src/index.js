@@ -3,6 +3,7 @@ import './css/common.sass';
 import './css/page.sass';
 import './css/footer.sass';
 import './css/base.scss';
+import './css/fonts.css';
 
 import React from 'react';
 import ReactDom from 'react-dom';

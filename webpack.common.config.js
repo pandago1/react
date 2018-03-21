@@ -18,19 +18,24 @@ commonConfig	= {
 		publicPath: '/'
 	},
 	module: {
-        rules: [{
-            test: /\.js$/,
-            use: ['babel-loader'],
-            include: path.join(__dirname, 'src')
-        }, {
-            test: /\.(png|jpg|gif)$/,
-            use: [{
-                loader: 'url-loader',
-                options: {
-                    limit: 8192
-                }
-            }]
-        }]
+        rules: [
+			{
+				test: /\.js$/,
+				use: ['babel-loader'],
+				include: path.join(__dirname, 'src')
+			}, {
+				test: /\.(png|jpg|gif)$/,
+				use: [{
+					loader: 'url-loader',
+					options: {
+						limit: 8192
+					}
+				}]
+			}, {
+				test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+				loader: 'file-loader?name=[name]_[hash:6].[ext]'
+			}
+		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({

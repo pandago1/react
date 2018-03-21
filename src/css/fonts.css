@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?l4copv');
+  src:  url('fonts/icomoon.eot?l4copv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?l4copv') format('truetype'),
+    url('fonts/icomoon.woff?l4copv') format('woff'),
+    url('fonts/icomoon.svg?l4copv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiangbei－fill:before {
+  content: "\e900";
+}
+.icon-jiangbei:before {
+  content: "\e901";
+}
+.icon-JCfootball－fill:before {
+  content: "\e902";
+}
+.icon-JCfootball:before {
+  content: "\e903";
+}
+.icon-ring:before {
+  content: "\e904";
+}
+.icon-football－fill:before {
+  content: "\e905";
+}
+.icon-football:before {
+  content: "\e906";
+}
+.icon-my_fill:before {
+  content: "\e907";
+}
+.icon-my:before {
+  content: "\e908";
+}
